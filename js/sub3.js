@@ -19,13 +19,28 @@ window.addEventListener("scroll", function () {
 });
 
 /**비쥬얼 이벤트**/
+let video = document.querySelector(".video_bg video");
+//console.log(video);
+
 $(".video_bg")
   .stop()
-  .animate({ height: "100%" }, 1000, function () {
-    setTimeout(function () {
-      $(".video_bg").addClass("on");
-    }, 100);
+  .animate({ width: "100%" }, 1000, function () {
+    $(".video_bg")
+      .stop()
+      .animate({ height: "100%" }, 1000, function () {
+        $(".visual_logo").stop().animate({ opacity: "1" }, 1000);
+        setTimeout(function () {
+          $(".video_bg").addClass("on");
+        }, 2000);
+      });
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  video.autoplay = false;
+  setTimeout(() => {
+    video.play();
+  }, 4150);
+});
 
 /**컨테이너 1번 스크롤 이벤트**/
 let con1 = document.querySelector(".con1"),
@@ -95,7 +110,7 @@ $(".con2_btn").click(function () {
 });
 
 /***컨테이너 2번 (자동)슬라이드****/
-let go = setInterval(goToSlide, 5000);
+let go = setInterval(goToSlide, 7000);
 function goToSlide() {
   /* 티비엔 슬라이드 */
   $(".tvn_slide ul")
@@ -159,23 +174,61 @@ window.addEventListener("scroll", function () {
 
 /*컨테이너 3번 버튼 이벤트*/
 let current = 0;
+let winSize = window.innerWidth;
 
 // 컨테이너 3번 좌우버튼 이벤트 함수
+
 function goto(idx) {
+  let change = winSize >= 850 ? -40 : -100;
   $(".time_drag")
     .stop()
-    .animate({ marginLeft: `${-40 * idx}%` });
+    .animate({ marginLeft: `${change * idx}%` });
   current = idx;
 }
-// 컨테이너 3번 다음버튼 이벤트
-$(".con3_next_btn").click(function () {
-  if (current !== 4) {
-    goto(current + 1);
-  }
-});
-// 컨테이너 3번 이전버튼 이벤트
-$(".con3_prev_btn").click(function () {
-  if (current !== 0) {
-    goto(current - 1);
-  }
-});
+
+function setresize() {
+  winSize = window.innerWidth;
+  //console.log(winSize);
+  // 컨테이너 3번 다음버튼 이벤트
+  $(".con3_next_btn").click(function () {
+    if (current !== 4) {
+      goto(current + 1);
+    }
+  });
+
+  // 컨테이너 3번 이전버튼 이벤트
+  $(".con3_prev_btn").click(function () {
+    if (current !== 0) {
+      goto(current - 1);
+    }
+  });
+}
+
+//$(document).ready(function () {
+setresize(); // 페이지 로드 시 초기 resize 함수 호출
+$(window).resize(setresize); // 창 크기 변경 이벤트 핸들링 설정
+//});
+
+//처음꺼
+// /*컨테이너 3번 버튼 이벤트*/
+// let current = 0;
+
+// // 컨테이너 3번 좌우버튼 이벤트 함수
+// function goto(idx) {
+//   $(".time_drag")
+//     .stop()
+//     .animate({ marginLeft: `${-40 * idx}%` });
+//   current = idx;
+// }
+// // 컨테이너 3번 다음버튼 이벤트
+// $(".con3_next_btn").click(function () {
+//   if (current !== 4) {
+//     goto(current + 1);
+//   }
+// });
+// // 컨테이너 3번 이전버튼 이벤트
+// $(".con3_prev_btn").click(function () {
+//   if (current !== 0) {
+//     goto(current - 1);
+//   }
+// });
