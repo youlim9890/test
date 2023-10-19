@@ -1,0 +1,25 @@
+<svg width="436" height="236" viewBox="0 0 436 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="svg">
+<g id="yellow_line">
+<circle id="yellow_line_2" cx="116" cy="120" r="114.5" stroke="#F0CE22" stroke-width="3"/>
+</g>
+<g id="blue_line">
+<circle id="blue_line_2" cx="320" cy="120" r="114.5" stroke="#5D97E5" stroke-width="3"/>
+</g>
+<g id="green_circle">
+<circle id="green_circle_2" cx="115" cy="6" r="6" fill="#61D45D"/>
+</g>
+<g id="pink_circle">
+<circle id="pink_circle_2" cx="359" cy="13" r="6" fill="#FE9384"/>
+</g>
+<g id="yellow_circle">
+<circle id="yellow_circle_2" cx="235" cy="45" r="6" fill="#FFDA1B"/>
+</g>
+<g id="ornage_circle">
+<circle id="orange_circle" cx="247" cy="209" r="6" fill="#EE7100"/>
+</g>
+<g id="blue_circle">
+<path id="blue_circle_2" d="M22 65C22 68.3137 19.3137 71 16 71C12.6863 71 10 68.3137 10 65C10 61.6863 12.6863 59 16 59C19.3137 59 22 61.6863 22 65Z" fill="#579EF2"/>
+</g>
+</g>
+</svg>

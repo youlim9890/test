@@ -1,0 +1,55 @@
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+.go { 
+    -webkit-animation-name: fadeInUpShort; 
+    animation-name: fadeInUpShort; 
+}
+/*********************
+* fadeInUpShort
+*********************/
+@-webkit-keyframes fadeInUpShort { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUpShort { 
+
+    0% { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
+    
+    50%{        
+        opacity: 0; 
+        transform: translateY(0px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(20px); 
+    } 
+} 
+
+.delay-0 { -webkit-animation-delay: 0s; animation-delay: 0s; }
+.delay-1 { -webkit-animation-delay: 0.8s; animation-delay: 0.8s; }
+.delay-2 { -webkit-animation-delay: 1s; animation-delay: 1s; }
+.delay-50 { -webkit-animation-delay: 0s; animation-delay: 0s; }
+.delay-100 { -webkit-animation-delay: 0.8s; animation-delay: 0.8s; }
+.delay-150 { -webkit-animation-delay:1s; animation-delay: 1s; }
+.delay-200 { -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
+.delay-250 { -webkit-animation-delay: 2s; animation-delay: 2s; }
+.delay-300 { -webkit-animation-delay: 2.1s; animation-delay: 2.1s; }
+.delay-350 { -webkit-animation-delay: 2.5s; animation-delay: 2.5s; }
+.delay-400 { -webkit-animation-delay: 3s; animation-delay: 3s; }
+.delay-450 { -webkit-animation-delay: 3.5s; animation-delay: 3.5s; }
+.delay-500 { -webkit-animation-delay: 3.5s; animation-delay: 3.5s; }

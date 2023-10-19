@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CJ E&M TVSHOW</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <link href="css/header2.css" rel="stylesheet" />
+    <link href="css/sub3.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 헤더입니당 -->
+    <header>
+      <h1 class="logo">
+        <a href="index.html"><img src="img/cj_enm_logo.svg" /></a>
+      </h1>
+      <a href="#1" class="menu">
+        <div class="menu_bar">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </a>
+      <div class="menu_parent">
+        <div class="menu_wrap">
+          <ul class="navi">
+            <li>
+              <a href="index.html">
+                <div class="menu_name">
+                  <p class="number">01</p>
+                  <h1>HOME</h1>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="menu_name">
+                  <p class="number">02</p>
+                  <h1>ABOUT</h1>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="menu_name">
+                  <p class="number">03</p>
+                  <h1>MOVIE</h1>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="menu_name">
+                  <p class="number">04</p>
+                  <h1>TVSHOW</h1>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="menu_name">
+                  <p class="number">05</p>
+                  <h1>ENTERTAINMENT</h1>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- 비쥬얼입니당 -->
+    <div id="visual">
+      <div class="video_bg">
+        <video muted autoplay loop>
+          <source src="img/visual_video.mp4" />
+        </video>
+      </div>
+    </div>
+
+    <!-- 컨테이너 입니당 -->
+    <div id="container">
+      <!-- 컨테이너 1번 입니당 -->
+      <div class="con1">
+        <img class="star1 star" src="img/star1.png" />
+        <img class="star2 star" src="img/star2.png" />
+        <div class="con1_inner">
+          <ul>
+            <li><img src="img/con1_img.png" alt="우주 tv" /></li>
+            <li>
+              <h2>No1. CHANNEL</h2>
+              <p>
+                CJ ENM은 대한민국 최대 콘텐츠 사업자입니다.<br />다양한 장르의
+                방송 채널을 통해 공감과 재미를 전하며<br />
+                K콘텐츠로 일상의 즐거움을 만들어가고 있습니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 컨테이너 2번입니당 -->
+      <div class="con2">
+        <img class="star3" src="img/star3.png" />
+        <img class="star4" src="img/star3.png" />
+        <div class="con2_inner">
+          <!-- 컨테이너 2번 왼쪽입니당 -->
+          <div class="con2_left">
+            <h2>TV SHOW</h2>
+            <div class="con2_btn_wrap">
+              <div class="con2_btn">
+                <img src="img/con1_btn.png" alt="tvN" />
+              </div>
+              <div class="con2_btn">
+                <img src="img/con1_btn_2.png" alt="Mnet" />
+              </div>
+              <div class="con2_btn">
+                <img src="img/con1_btn_3.png" alt="OCN" />
+              </div>
+              <div class="con2_btn">
+                <img src="img/con1_btn_4.png" alt="tooniverse" />
+              </div>
+            </div>
+          </div>
+          <!-- 컨테이너 2번 오른쪽입니당 -->
+          <div class="con2_right">
+            <!--오른쪽 부모-->
+            <div class="con2_right_content">
+              <!--띄워야 하는 오른쪽 내용 tvn-->
+              <div class="con2_right_content_title on">
+                <h2>No.1 K콘텐츠 채널,<br />즐거움엔 tvN</h2>
+                <a class="viewmore" href="https://tvn.cjenm.com/ko/"
+                  >view more
+                  <span class="a_line"></span>
+                </a>
+              </div>
+              <!-- 컨테이너 2번 오른쪽의 하단 슬라이더 -->
+              <div class="tvn_slide con2_slide on">
+                <ul>
+                  <li class="tvn_li1">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>유 퀴즈 온 더 블럭</h3>
+                      <p>
+                        큰 자기 유재석과 아기자기 조세호의<br />
+                        자기들 마음대로 떠나는 사람여행!<br /><br />매주 [수]
+                        저녁 8:45 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="tvn_li2">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>코미디 빅리그</h3>
+                      <p>
+                        짜릿한 웃음 어드벤처 '코미디빅리그'<br /><br />현재 방송
+                        휴지기
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="tvn_li3">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>명의들의 경고</h3>
+                      <p>
+                        어느 날 갑자기 찾아와 삶을 위협하는 각종 질환,<br />
+                        대수롭지 않게 생각했던 질병의 역습!<br />
+                        대한민국 최고의 명의가 당신의 삶을 바꾸는 생명 코드를
+                        제시한다.<br /><br />2023-10-11(수)AM 09:00 ~ AM
+                        10:00(30회)
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="con2_right_content">
+              <!--띄워야 하는 오른쪽 내용 mnet-->
+              <div class="con2_right_content_title">
+                <h2>글로벌 No.1 음악채널,<br />Music Makes One : Mnet</h2>
+                <a class="viewmore" href="https://tvn.cjenm.com/ko/"
+                  >view more
+                  <span class="a_line"></span>
+                </a>
+              </div>
+              <!-- 컨테이너 2번 오른쪽의 하단 슬라이더 -->
+              <div class="mnet_slide con2_slide">
+                <ul>
+                  <li class="mnet_li1">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>스트릿 우먼 파이터 2</h3>
+                      <p>
+                        여성 댄스 크루들의 리얼 서바이벌 스트릿 우먼 파이터!<br />
+                        2023년 새로운 스트릿 서열 1위는 누가 될 것인가!<br /><br />매주
+                        [화] 저녁 10:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="mnet_li2">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>엠카운트다운</h3>
+                      <p>
+                        가요 트렌드를 이끄는 대한민국 대표 가수들을 만날 수
+                        있는<br />World No.1 K-POP Chart Show!<br /><br />매주
+                        [목] 저녁 06:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="mnet_li3">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>퀸덤 퍼즐</h3>
+                      <p>
+                        당신의 손에 새롭게 맞취지는 퍼즐!<br />
+                        걸그룹 최상의 조합을 완성하라! <br /><br />매주 [화]
+                        저녁 10:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="con2_right_content">
+              <!--띄워야 하는 오른쪽 내용 오씨엔-->
+              <div class="con2_right_content_title">
+                <h2>
+                  JUST FOLLOW<br />
+                  STORY No.1 : OCN
+                </h2>
+                <a class="viewmore" href="https://tvn.cjenm.com/ko/"
+                  >view more
+                  <span class="a_line"></span>
+                </a>
+              </div>
+              <!-- 컨테이너 2번 오른쪽의 하단 슬라이더 -->
+              <div class="ocn_slide con2_slide">
+                <ul>
+                  <li class="ocn_li1">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>NCIS: LA 14</h3>
+                      <p>
+                        천사의 도시 LA를 지킨다!<br />
+                        거침없는 매력의 특수 요원 콤비,<br />그들의 마지막
+                        이야기<br /><br />매주 [수] 저녁 11:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="ocn_li2">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>아가사 크리스티:왜 에번스를 부르지 않았지?</h3>
+                      <p>
+                        '추리 소설의 여왕' 아가사 크리스티 소설 원작!<br />한
+                        마디의 질문만 남긴채 사망한 남성의 미스터리를 풀어라!<br /><br />매주
+                        [금] 저녁 09:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="ocn_li3">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>더 퍼스트 무비</h3>
+                      <p>
+                        더 좋은 영화를 더 빠르게, 더 퍼스트 무비<br />
+                        무료한 주말을 달래줄 최고의 영화 한 편! OCN 신작
+                        영화들을 만나보세요!<br /><br />매주 [토] 저녁 10:30
+                        방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="con2_right_content">
+              <!--띄워야 하는 오른쪽 내용 투니버스-->
+              <div class="con2_right_content_title">
+                <h2>대한민국 어린이 No.1 채널<br />우리들의 투니버스!</h2>
+                <a class="viewmore" href="https://tvn.cjenm.com/ko/"
+                  >view more
+                  <span class="a_line"></span>
+                </a>
+              </div>
+              <!-- 컨테이너 2번 오른쪽의 하단 슬라이더 -->
+              <div class="tooni_slide con2_slide">
+                <ul>
+                  <li class="tooni_li1">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>짱구는 못말려23</h3>
+                      <p>
+                        초코비를 좋아하는 5살 짱구!<br />
+                        언제나 활기찬 짱구의 일상 속으로 함께 떠나자!<br /><br />매주
+                        [목] 저녁 7:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="tooni_li2">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>꼬미마녀라라2</h3>
+                      <p>
+                        생각보다 훨씬 더 즐겁고 근사한 일들로 가득하다!<br />운명처럼
+                        봉봉꼬미와 펫프를 맺고 대마법사 프리즘의 선택까지 받게
+                        되는데...<br /><br />매주 [목] 저녁 6:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                  <li class="tooni_li3">
+                    <div class="con2_text_bg"></div>
+                    <div class="con2_text">
+                      <h3>슈퍼트론</h3>
+                      <p>
+                        어느 날, 평화로운 도시가 커다란 우주 몬스터의 공격을
+                        받는다.<br />
+                        절체절명의 순간, 주인공 강찬은 신비한 힘에 이끌려
+                        6,500만년 전에 멸종된 거대 티라노사우루스, 티란을
+                        소환한다.<br />
+                        과연 강찬과 친구들은 몬스터를 막아내고 지구를 지킬 수
+                        있을 것인가...!!<br /><br />매주 [일] 오후 4:00 방송
+                      </p>
+                      <a class="more" href="#">more</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="slide_next_btn"><img src="img/arrow.png" /></a>
+      </div>
+
+      <!-- 컨테이너 3번입니당 -->
+      <div class="con3">
+        <div class="con3_inner">
+          <div class="con3_title">
+            <p>TV SHOW</p>
+            <h2>오늘 TV 뭐보지?<span class="point"></span></h2>
+          </div>
+          <!-- 티비엔 타임라인 -->
+          <div class="tvn_time timeline">
+            <div class="time_logo">
+              <img src="img/tvN.svg.png" alt="tvn" />
+            </div>
+            <div class="time_drag_wrap">
+              <div class="time_drag">
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>10:00</li>
+                      <li>
+                        <h3>유퀴즈 온 더 블럭</h3>
+                        <p>유퀴즈 온 더 블럭 83회</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>12:00</li>
+                      <li>
+                        <h3>[예능]벌거벗은 한국사</h3>
+                        <p>벌거벗은 한국사 76회</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>13:00</li>
+                      <li>
+                        <h3>아라문의 검</h3>
+                        <p>아라문의 검 9화</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>14:00</li>
+                      <li>
+                        <h3>아라문의 검</h3>
+                        <p>아라문의 검 10화</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>15:00</li>
+                      <li>
+                        <h3>[예능]놀라운 토요일</h3>
+                        <p>놀라운 토요일 285회</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 엠넷 타임라인 -->
+          <div class="tvn_time timeline">
+            <div class="time_logo">
+              <img src="img/Mnet.png" alt="mnet" />
+            </div>
+            <div class="time_drag_wrap">
+              <div class="time_drag">
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>10:00</li>
+                      <li>
+                        <h3>엠카운트다운 818회</h3>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>12:00</li>
+                      <li>
+                        <h3>더 콜 2 5회</h3>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>13:00</li>
+                      <li>
+                        <h3>무대에 진심인 편 7회</h3>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>14:00</li>
+                      <li>
+                        <h3>[M2 스페셜] 니얌니얌 3회</h3>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>15:00</li>
+                      <li>
+                        <h3>스트릿 우먼 파이터2 7회</h3>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 오씨엔 타임라인 -->
+          <div class="ocn_time timeline">
+            <div class="time_logo">
+              <img src="img/OCN.svg.png" alt="ocn" />
+            </div>
+            <div class="time_drag_wrap">
+              <div class="time_drag">
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>10:00</li>
+                      <li>
+                        <h3>핵소고지</h3>
+                        <p>핵소고지 1부</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>12:00</li>
+                      <li>
+                        <h3>핵소고지</h3>
+                        <p>핵소고지 2부</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>13:00</li>
+                      <li>
+                        <h3>스텔라</h3>
+                        <p>스텔라 1부</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>14:00</li>
+                      <li>
+                        <h3>스텔라</h3>
+                        <p>스텔라 2부</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>15:00</li>
+                      <li>
+                        <h3>젠틀맨(2022)</h3>
+                        <p>젠틀맨(2022) 2부</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 투니버스 타임라인 -->
+          <div class="tooni_time timeline">
+            <div class="time_logo">
+              <img src="img/Tooniverse.svg.png" alt="tooniverse" />
+            </div>
+            <div class="time_drag_wrap">
+              <div class="time_drag">
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>10:00</li>
+                      <li>
+                        <h3>브레드이발소3</h3>
+                        <p>1화:고양이 컵케이크</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>12:00</li>
+                      <li>
+                        <h3>짱구는 못말려22</h3>
+                        <p>제 1-1화</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>13:00</li>
+                      <li>
+                        <h3>백앤아:남매튜브</h3>
+                        <p>1화:엄마가 집에 없을 때</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>14:00</li>
+                      <li>
+                        <h3>레인보우 버블젬</h3>
+                        <p>제9화:퍼플킹의방문</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="time_drag_big">
+                  <li>
+                    <ul class="time_drag_small">
+                      <li>15:00</li>
+                      <li>
+                        <h3>신비아파트:고스트볼의비밀</h3>
+                        <p>13화:죽음에서돌아온꽃</p>
+                      </li>
+                      <li>
+                        <span>재</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="con3_btn">
+            <img class="con3_prev_btn" src="img/prev.png" />
+            <img class="con3_next_btn" src="img/next.png" />
+          </div>
+        </div>
+      </div>
+      <!-- 컨테이너 4번 -->
+      <div class="con4">
+        <div class="banner pc">
+          <img src="img/banner.png" alt="티빙 피씨 배너" />
+        </div>
+        <div class="banner mo">
+          <img src="img/banner_m.jpg" alt="티빙 모바일 배너" />
+        </div>
+      </div>
+    </div>
+    <!-- 헤더 스크립트 -->
+    <script src="js/menu.js"></script>
+    <!--sub3 스크립트 -->
+    <script src="js/sub3.js"></script>
+  </body>
+</html>
