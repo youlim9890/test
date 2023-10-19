@@ -1234,7 +1234,7 @@ input[type="checkbox"]:checked ~ div {
 /*con5*/
 .wave1{display: block;width: 100%;position: absolute;z-index: 0; margin-top: -3%;}
 .wave1 img{width:100%;}
-.con5{width:100%;height:211vh;background-color: #000000;}
+.con5{width:100%;height:195vh;background-color: #000000;}
 .con5_text{padding-top:245px;color:white;font-family:Happiness-Sans-Bold;font-size: 40px;margin-bottom: 2%; text-align: center;}
 .con5_img_wrap{width: 245px;height:1000px;position: relative;margin:0px auto;margin-right: 61%;}
 .con5_img_wrap img{display:block;width:50%;}
@@ -1247,16 +1247,16 @@ input[type="checkbox"]:checked ~ div {
 .centerline{position: absolute;top:0px;left: 45%;}
 .shap1{position: absolute;top:0%;left: 30%;}
 .con5_sub_text{position: absolute;color:white;left: -150%;font-size: 1vw;line-height: 200%;display:none;}
-.con5_sub_text.on{    width: 55%;position: absolute;color:white;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.con5_sub_text.on{width: 38%;position: absolute;color:white;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
 .shap2{position: absolute;top:30%;left:32%;}
 .con5_sub1_text{position: absolute;color:white;top:30%;left: 82%;font-size: 1.5vw;line-height: 200%;z-index: 50;display: none;}
-.con5_sub1_text.on{    width: 55%;position: absolute;color:white;top:30%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.con5_sub1_text.on{width: 38%;position: absolute;color:white;top:30%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
 .shap3{position: absolute;top:60%;left: 32%;}
 .con5_sub2_text{position: absolute;color:white;top:60%;left:87%;font-size: 1vw;line-height: 200%;display:none;}
-.con5_sub2_text.on{    width: 55%;position: absolute;color:white;top:60%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.con5_sub2_text.on{width: 38%;position: absolute;color:white;top:60%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
 .shap4{position: absolute;top:99%;left:31%}
 .con5_sub3_text{position: absolute;color:white;top:99%;left: 87%;font-size: 1vw;line-height: 200%;display:none;}
-.con5_sub3_text.on{    width: 55%;position: absolute;color:white;top:99%;Left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.con5_sub3_text.on{width: 38%;position: absolute;color:white;top:99%;Left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
 .con5_sub_text>div:nth-of-type(1):hover{color:lightyellow}
 .con5_sub_text>div:nth-of-type(1):hover i{rotate:-180deg;color:rgb(255, 252, 78)!important;}
 .con5_sub_text.go{-webkit-animation-name: fadeInUpShort; animation-name: fadeInUpShort; }
@@ -1484,35 +1484,36 @@ input[type="checkbox"]:checked ~ div {
   .con4m_text4 h3{font-family:Happiness-Sans-Bold;font-size: 4vw;margin-bottom: 2%;margin-top:15%; text-align: center;}
   .con4m_text4 p{font-family:Pretendard-Regular;font-size:3vw;width:86%;margin:0px auto;line-height: 200%;text-align: center;}
   
-  /*con5*/
-  .wave1{display: block;width: 100%;position: absolute;z-index: 0; margin-top: -3%;}
-  .wave1 img{width:100%;}
-  .con5{width:100%;height:195vh;background-color: #000000;}
-  .con5_text{padding-top:245px;color:white;font-family:Happiness-Sans-Bold;font-size: 40px;margin-bottom: 2%; text-align: center;}
-  .con5_img_wrap{width:315px;height:1000px;position: relative;margin:0px auto;margin-right: 61%;}
-  .con5_img_wrap img{display:block;width:50%;}
-  .roket{position: absolute;top:0%;left: 34.5%;}
-  .roket.on{position: absolute;left: 34.5%;}
-  .roket.on2{position: absolute;left: 34.5%;animation:roket 3s forwards;}
-  .roket.on3{position: absolute;left: 34.5%;animation:roket1 3s forwards;}
-  .roket.on4{position: absolute;left: 34.5%;animation:roket2 3s forwards;}
-  .roket.on5{position: absolute;left: 34.5%;animation:roket3 3s forwards;}
-  .centerline{position: absolute;top:0px;left: 45%;}
-  .shap1{position: absolute;top:0%;left: 30%;}
-  .con5_sub_text{position: absolute;color:white;left: -150%;font-size: 1vw;line-height: 200%;display:none;}
-  .con5_sub_text.on{width: 38%;position: absolute;color:white;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
-  .shap2{position: absolute;top:30%;left:32%;}
-  .con5_sub1_text{position: absolute;color:white;top:30%;left: 82%;font-size: 1.5vw;line-height: 200%;z-index: 50;display: none;}
-  .con5_sub1_text.on{width: 38%;position: absolute;color:white;top:30%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
-  .shap3{position: absolute;top:60%;left: 32%;}
-  .con5_sub2_text{position: absolute;color:white;top:60%;left:87%;font-size: 1vw;line-height: 200%;display:none;}
-  .con5_sub2_text.on{width: 38%;position: absolute;color:white;top:60%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
-  .shap4{position: absolute;top:99%;left:31%}
-  .con5_sub3_text{position: absolute;color:white;top:99%;left: 87%;font-size: 1vw;line-height: 200%;display:none;}
-  .con5_sub3_text.on{width: 38%;position: absolute;color:white;top:99%;Left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
-  .con5_sub_text>div:nth-of-type(1):hover{color:lightyellow}
-  .con5_sub_text>div:nth-of-type(1):hover i{rotate:-180deg;color:rgb(255, 252, 78)!important;}
-  .con5_sub_text.go{-webkit-animation-name: fadeInUpShort; animation-name: fadeInUpShort; }
+/*con5*/
+.wave1{display: block;width: 100%;position: absolute;z-index: 0; margin-top: -3%;}
+.wave1 img{width:100%;}
+.con5{width:100%;height:195vh;background-color: #000000;}
+.con5_text{padding-top:245px;color:white;font-family:Happiness-Sans-Bold;font-size: 40px;margin-bottom: 2%; text-align: center;}
+.con5_img_wrap{width: 245px;height:1000px;position: relative;margin:0px auto;margin-right: 61%;}
+.con5_img_wrap img{display:block;width:50%;}
+.roket{position: absolute;top:0%;left: 34.5%;}
+.roket.on{position: absolute;left: 34.5%;}
+.roket.on2{position: absolute;left: 34.5%;animation:roket 3s forwards;}
+.roket.on3{position: absolute;left: 34.5%;animation:roket1 3s forwards;}
+.roket.on4{position: absolute;left: 34.5%;animation:roket2 3s forwards;}
+.roket.on5{position: absolute;left: 34.5%;animation:roket3 3s forwards;}
+.centerline{position: absolute;top:0px;left: 45%;}
+.shap1{position: absolute;top:0%;left: 30%;}
+.con5_sub_text{position: absolute;color:white;left: -150%;font-size: 1vw;line-height: 200%;display:none;}
+.con5_sub_text.on{width: 38%;position: absolute;color:white;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.shap2{position: absolute;top:30%;left:32%;}
+.con5_sub1_text{position: absolute;color:white;top:30%;left: 82%;font-size: 1.5vw;line-height: 200%;z-index: 50;display: none;}
+.con5_sub1_text.on{width: 38%;position: absolute;color:white;top:30%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.shap3{position: absolute;top:60%;left: 32%;}
+.con5_sub2_text{position: absolute;color:white;top:60%;left:87%;font-size: 1vw;line-height: 200%;display:none;}
+.con5_sub2_text.on{width: 38%;position: absolute;color:white;top:60%;left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.shap4{position: absolute;top:99%;left:31%}
+.con5_sub3_text{position: absolute;color:white;top:99%;left: 87%;font-size: 1vw;line-height: 200%;display:none;}
+.con5_sub3_text.on{width: 38%;position: absolute;color:white;top:99%;Left: 87%;font-size: 1.5vw;line-height: 200%;display: block !important;z-index: 50;}
+.con5_sub_text>div:nth-of-type(1):hover{color:lightyellow}
+.con5_sub_text>div:nth-of-type(1):hover i{rotate:-180deg;color:rgb(255, 252, 78)!important;}
+.con5_sub_text.go{-webkit-animation-name: fadeInUpShort; animation-name: fadeInUpShort; }
+
   
   @keyframes roket {
     0% {
