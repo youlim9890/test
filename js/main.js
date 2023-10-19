@@ -84,94 +84,159 @@ $(document).ready(function () {
       }
     }, 3000);
   }, 18000);
+  $("header").removeClass("on");
+  /*스크롤제어*/
+  let con1 = $(".con1").offset().top;
+  let con2 = $(".con2").offset().top;
+  let con3 = $(".con3").offset().top;
+  let con4 = $(".con4").offset().top;
 
-  /*con1 자동 slide*/
-  let j = 0;
-  let con1Total = $(".con1_text").length;
-  let fade;
-  $(".con1_text").eq(0).addClass("on");
-  $(".con1_icon img").eq(0).addClass("on");
-  start();
-  function start() {
-    fade = setInterval(function () {
-      if (j == con1Total - 1) {
-        j = 0;
-      } else {
-        j++;
-      }
-      $(".con1_img img").css({ display: "none" });
-      $(".con1_img img").eq(j).css({ display: "block" });
-      $(".con1_text").removeClass("on");
-      $(".con1_text").eq(j).addClass("on");
-      $(".con1_icon img").removeClass("on");
-      $(".con1_icon img").eq(j).addClass("on");
-    }, 4000);
-  }
-
-  $(".next").click(function () {
-    clearInterval(fade);
-
-    if (j == con1Total - 1) {
-      j = 0;
-    } else {
-      j++;
-    }
-    $(".con1_img img").css({ display: "none" });
-    $(".con1_img img").eq(j).css({ display: "block" });
-    $(".con1_text").removeClass("on");
-    $(".con1_text").eq(j).addClass("on");
-    $(".con1_icon img").removeClass("on");
-    $(".con1_icon img").eq(j).addClass("on");
-
-    start();
-  });
-
-  $(".prev").click(function () {
-    clearInterval(fade);
-
-    if (j == 0) {
-      j = 2;
-    } else {
-      j--;
-    }
-    $(".con1_img img").css({ display: "none" });
-    $(".con1_img img").eq(j).css({ display: "block" });
-    $(".con1_text").removeClass("on");
-    $(".con1_text").eq(j).addClass("on");
-    $(".con1_icon img").removeClass("on");
-    $(".con1_icon img").eq(j).addClass("on");
-
-    start();
-  });
-
-  /*con2 자동 슬라이드*/
-  let a = 0;
-  let con2Total = $(".con2_wrap>img").length;
-  // let con2Hei = 100;
-  let enter;
-
-  $(".enter_wrap").eq(0).addClass("on");
-  start2();
-  function start2() {
-    enter = setInterval(function () {
-      if (a == con2Total - 1) {
-        a = 0;
-      } else {
-        a++;
+  $(".scroll_section_wrap").scroll(function () {
+    let scroll = $(".scroll_section_wrap").scrollTop();
+    console.log(scroll);
+    if (scroll == con1) {
+      $("header").removeClass("on");
+      /*con1 자동 slide*/
+      let j = 0;
+      let con1Total = $(".con1_text").length;
+      let fade;
+      $(".con1_text").eq(0).addClass("on");
+      $(".con1_icon img").eq(0).addClass("on");
+      start();
+      function start() {
+        fade = setInterval(function () {
+          if (j == con1Total - 1) {
+            j = 0;
+          } else {
+            j++;
+          }
+          $(".con1_img img").css({ display: "none" });
+          $(".con1_img img").eq(j).css({ display: "block" });
+          $(".con1_text").removeClass("on");
+          $(".con1_text").eq(j).addClass("on");
+          $(".con1_icon img").removeClass("on");
+          $(".con1_icon img").eq(j).addClass("on");
+        }, 4000);
       }
 
-      $(".con2_wrap>img").css({ display: "none" });
-      $(".con2_wrap>img").eq(a).css({ display: "block" });
-      $(".enter_wrap").removeClass("on");
-      $(".enter_wrap").eq(a).addClass("on");
-    }, 3000);
+      $(".next").click(function () {
+        clearInterval(fade);
 
-    $(".enter_wrap a").click(function () {
-      clearInterval(enter);
-      $(".enter_wrap").removeClass("on");
-      $(this).parents(".enter_wrap").addClass("on");
+        if (j == con1Total - 1) {
+          j = 0;
+        } else {
+          j++;
+        }
+        $(".con1_img img").css({ display: "none" });
+        $(".con1_img img").eq(j).css({ display: "block" });
+        $(".con1_text").removeClass("on");
+        $(".con1_text").eq(j).addClass("on");
+        $(".con1_icon img").removeClass("on");
+        $(".con1_icon img").eq(j).addClass("on");
 
+        start();
+      });
+
+      $(".prev").click(function () {
+        clearInterval(fade);
+
+        if (j == 0) {
+          j = 2;
+        } else {
+          j--;
+        }
+        $(".con1_img img").css({ display: "none" });
+        $(".con1_img img").eq(j).css({ display: "block" });
+        $(".con1_text").removeClass("on");
+        $(".con1_text").eq(j).addClass("on");
+        $(".con1_icon img").removeClass("on");
+        $(".con1_icon img").eq(j).addClass("on");
+
+        start();
+      });
+    } else if (scroll == con2) {
+      $("header").removeClass("on");
+      /*con2 자동 슬라이드*/
+      let a = 0;
+      let con2Total = $(".con2_wrap>video").length;
+      let enter;
+
+      $(".con2_wrap>video").eq(0).css({ display: "block" });
+      $(".enter_wrap").eq(0).addClass("on");
       start2();
-    });
-  }
+      function start2() {
+        enter = setInterval(function () {
+          if (a == con2Total - 1) {
+            a = 0;
+          } else {
+            a++;
+          }
+
+          $(".con2_wrap>video").css({ display: "none" });
+          $(".con2_wrap>video").eq(a).css({ display: "block" });
+          $(".enter_wrap").removeClass("on");
+          $(".enter_wrap").eq(a).addClass("on");
+          $(".enter_wrap img").removeClass("on");
+          $(".enter_wrap img").eq(a).addClass("on");
+        }, 6000);
+      }
+
+      $(".enter_wrap a").click(function () {
+        clearInterval(enter);
+
+        a = $(this).parent().index();
+        $(".enter_wrap").removeClass("on");
+        $(this).parents(".enter_wrap").addClass("on");
+
+        $(".con2_wrap>video").css({ display: "none" });
+        $(".con2_wrap>video").eq(a).css({ display: "block" });
+
+        start2();
+      });
+    } else if (scroll == con3) {
+      $("header").addClass("on");
+      /*con3 타이포 효과*/
+      setInterval(function () {
+        $(".h2_1, .h2_2, .h2_3").addClass("on");
+      }, 1000);
+
+      setTimeout(function () {
+        setInterval(function () {
+          $(".red, .orange, .blue").addClass("on");
+        }, 1000);
+      }, 1200);
+
+      setTimeout(function () {
+        $(".con3_bounce").addClass("on");
+      }, 3200);
+    } else if (scroll == con4) {
+      $("header").removeClass("on");
+      /*con4 mouseenter할때 변화*/
+      $(".con4_partner").addClass("active");
+      $(".con4_partner").mouseenter(function () {
+        a = $(this).index();
+        $(this).addClass("on");
+        $(this).addClass("fix");
+      });
+      $(".con4_partner").mouseleave(function () {
+        a = $(this).index();
+        $(this).removeClass("on");
+      });
+    }
+  });
+
+  /*footer*/
+  let b = 0;
+  $(".family_site>p").click(function (event) {
+    if (b == 0) {
+      $(".family_site span").stop().animate({ rotate: "45deg" }, 500);
+      b = 1;
+    } else {
+      $(".family_site span").stop().animate({ rotate: "0deg" }, 500);
+      b = 0;
+    }
+
+    $(".box_w").stop().slideToggle();
+    event.preventDefault();
+  });
 });
