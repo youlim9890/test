@@ -139,3 +139,27 @@ header {
   letter-spacing: 3px;
   font-weight: normal;
 }
+
+/*******메뉴창 미디어 쿼리********/
+
+@media all and (max-width: 900px) {
+  .menu_name h1 {
+    font-size: 60px;
+  }
+}
+@media all and (max-width: 780px) {
+  .menu_wrap {
+    padding: 10vw;
+  }
+  .menu_name h1 {
+    font-size: 8vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu_wrap {
+    padding: 5vw;
+  }
+  .navi li:not(:last-child) {
+    margin-bottom: 5vw;
+  }
+}
