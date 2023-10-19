@@ -7,10 +7,57 @@
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/main2.js"></script>
+    <script src="js/movie.js"></script>
     <script src="js/footer.js"></script>
-    <link href="css/header1.css" rel="stylesheet" />
-    <link href="css/main2.css" rel="stylesheet" />
+    <!-- <script type="text/javascript">
+      window.onload = function () {
+        var elm = ".scroll_section";
+        $(elm).each(function (index) {
+          // 개별적으로 Wheel 이벤트 적용
+          $(this).on("mousewheel DOMMouseScroll", function (e) {
+            e.preventDefault();
+            var delta = 0;
+            if (!event) event = window.event;
+            if (event.wheelDelta) {
+              delta = event.wheelDelta / 120;
+              if (window.opera) delta = -delta;
+            } else if (event.detail) delta = -event.detail / 3;
+            var moveTop = $(window).scrollTop();
+            var elmSelecter = $(elm).eq(index);
+            // 마우스휠을 위에서 아래로
+            if (delta < 0) {
+              if ($(elmSelecter).next() != undefined) {
+                try {
+                  moveTop = $(elmSelecter).next().offset().top;
+                } catch (e) {}
+              }
+              // 마우스휠을 아래에서 위로
+            } else {
+              if ($(elmSelecter).prev() != undefined) {
+                try {
+                  moveTop = $(elmSelecter).prev().offset().top;
+                } catch (e) {}
+              }
+            }
+
+            // 화면 이동 0.8초(800)
+            $("html,body")
+              .stop()
+              .animate(
+                {
+                  scrollTop: moveTop + "px",
+                },
+                {
+                  duration: 800,
+                  complete: function () {},
+                }
+              );
+          });
+        });
+      };
+    </script> -->
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/movie.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
   </head>
   <body>
@@ -41,7 +88,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="about.html">
                   <div class="menu_name">
                     <p class="number">02</p>
                     <h1>ABOUT</h1>
@@ -49,7 +96,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="movie.html">
                   <div class="menu_name">
                     <p class="number">03</p>
                     <h1>MOVIE</h1>
@@ -57,18 +104,10 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="sub3.html">
                   <div class="menu_name">
                     <p class="number">04</p>
                     <h1>TVSHOW</h1>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="menu_name">
-                    <p class="number">05</p>
-                    <h1>ENTERTAINMENT</h1>
                   </div>
                 </a>
               </li>
@@ -83,24 +122,102 @@
         <div class="inner">
           <div class="img_wrap">
             <div class="img_1st img">
-              <div class="up_wrap wrap"><div class="up"></div></div>
-              <div class="down_wrap wrap"><div class="down"></div></div>
-              <div class="up_wrap wrap"><div class="up"></div></div>
-              <div class="down_wrap wrap"><div class="down"></div></div>
+              <div class="up_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%83%A4%ED%81%AC--%EB%8D%94-%EB%B9%84%EA%B8%B0%EB%8B%9D/"
+                  target="_blank"
+                  ><div class="up"></div
+                ></a>
+              </div>
+              <div class="down_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%99%B8%EA%B3%84plus%EC%9D%B8-1%EB%B6%80/"
+                  target="_blank"
+                  ><div class="down"></div
+                ></a>
+              </div>
+              <div class="up_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%97%91%EC%8B%9C%ED%8A%B8/"
+                  target="_blank"
+                  ><div class="up"></div
+                ></a>
+              </div>
+              <div class="down_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EB%B8%8C%EB%A1%9C%EC%BB%A4/"
+                  target="_blank"
+                  ><div class="down"></div
+                ></a>
+              </div>
             </div>
             <div class="img_2nd img">
-              <div class="down_wrap wrap"><div class="down"></div></div>
-              <div class="up_wrap wrap"><div class="up"></div></div>
-              <div class="down_wrap wrap"><div class="down"></div></div>
-              <div class="up_wrap wrap"><div class="up"></div></div>
-              <div class="down_wrap wrap"><div class="down"></div></div>
+              <div class="down_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EB%B6%88%ED%95%9C%EB%8B%B9-%EB%82%98%EC%81%9C-%EB%86%88%EB%93%A4%EC%9D%98-%EC%84%B8%EC%83%81/"
+                  target="_blank"
+                  ><div class="down"></div
+                ></a>
+              </div>
+              <div class="up_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EA%B3%B5%EC%9E%91/"
+                  target="_blank"
+                  ><div class="up"></div
+                ></a>
+              </div>
+              <div class="down_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%95%84%EA%B0%80%EC%94%A8/"
+                  target="_blank"
+                  ><div class="down"></div
+                ></a>
+              </div>
+              <div class="up_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%84%A4%EA%B5%AD%EC%97%B4%EC%B0%A8/"
+                  target="_blank"
+                  ><div class="up"></div
+                ></a>
+              </div>
+              <div class="down_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EA%B3%B5%EC%A1%B02--%EC%9D%B8%ED%84%B0%EB%82%B4%EC%85%94%EB%82%A0/"
+                  target="_blank"
+                  ><div class="down"></div
+                ></a>
+              </div>
             </div>
             <div class="img_3rd img">
-              <div class="down_wrap wrap"><div class="down"></div></div>
-              <div class="up_wrap wrap"><div class="up"></div></div>
-              <div class="down_wrap wrap"><div class="down"></div></div>
+              <div class="down_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EA%B4%91%ED%95%B4-%EC%99%95%EC%9D%B4-%EB%90%9C-%EB%82%A8%EC%9E%90/"
+                  target="_blank"
+                  ><div class="down"></div
+                ></a>
+              </div>
+              <div class="up_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%B9%9C%EC%A0%88%ED%95%9C-%EA%B8%88%EC%9E%90%EC%94%A8/"
+                  target="_blank"
+                  ><div class="up"></div
+                ></a>
+              </div>
+              <div class="down_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%99%95%EC%9D%98-%EB%82%A8%EC%9E%90/"
+                  target="_blank"
+                  ><div class="down"></div
+                ></a>
+              </div>
               <div class="blank wrap"></div>
-              <div class="up_wrap wrap"><div class="up"></div></div>
+              <div class="up_wrap wrap">
+                <a
+                  href="https://www.cjenm.com/ko/featured-contents/%EC%8B%A4%EB%AF%B8%EB%8F%84/"
+                  target="_blank"
+                  ><div class="up"></div
+                ></a>
+              </div>
             </div>
             <div class="main_txt">
               <h2>
@@ -145,6 +262,7 @@
                     <p>감독 : 스티브 스필버그</p>
                     <p>개봉일 : 2023년 9월 27일</p>
                     <p>장르 : 판타지</p>
+                    <p>제작·배급 : CJ ENM</p>
                     <p>
                       줄거리 :<br />
                       스티븐 스필버그의 자전적인 이야기를 담은 미국 영화로,
@@ -155,7 +273,7 @@
                       <a
                         href="http://www.cgv.co.kr/movies/detail-view/?midx=86892"
                         target="_blank"
-                        >더 알아보기</a
+                        >예매하기</a
                       >
                     </div>
                   </div>
@@ -169,29 +287,28 @@
                   <div class="back_text">
                     <h3>명탐정 코난<br />: 흑철의 여영</h3>
                     <p>
-                      출연 : 타카야마 미나미(김선혜), 이케다
-                      슈이치(강수진),야마자키 와카나,(이현진)
+                      출연 : 타카야마 미나미(김선혜), 코야마
+                      리키야(이정구),야마자키 와카나(이현진)
                     </p>
                     <p>감독 : 타치카와 유즈루</p>
                     <p>개봉일 : 2023년 7월 20일</p>
                     <p>장르 : 애니메이션, 추리, 미스터리</p>
+                    <p>제작·배급 : CJ ENM</p>
                     <p>
                       줄거리 :<br />
                       도쿄 하치조지마 근해에 건설된, 전 세계의 경찰이 가지고
                       있는 방범 카메라를 연결하기 위한 해양 시설 「퍼시픽 •
-                      부이[10]」. 그 곳에서는 「신기술」의 테스트도 진행되고
-                      있었다. 한편, 소노코의 초대로 하치조지마에 고래 관광을
-                      하러 온 소년 탐정단. 그러자 코난에게 오키야 스바루(아카이
-                      슈이치)로부터 '유로폴 직원이 진에게 살해되었다'는 한 통의
-                      전화가. 심상치 않게 여긴 코난은 퍼시픽 • 부이 시설 안으로
-                      잠입. 그 후, 한 여성 엔지니어가 검은 조직에 납치되는
-                      사건이 발생…!
+                      부이[10]」. 한편, 소노코의 초대로 하치조지마에 고래 관광을
+                      하러 온 소년 탐정단. 코난에게 '유로폴 직원이 진에게
+                      살해되었다'는 한 통의 전화가. 심상치 않게 여긴 코난은
+                      퍼시픽 • 부이 시설 안으로 잠입. 그 후, 한 여성 엔지니어가
+                      검은 조직에 납치되는 사건이 발생…!
                     </p>
                     <div class="btn_more">
                       <a
                         href="http://www.cgv.co.kr/search/?query=%uBA85%uD0D0%uC815%20%uCF54%uB09C"
                         target="_blank"
-                        >더 알아보기</a
+                        >예매하기</a
                       >
                     </div>
                   </div>
@@ -208,6 +325,7 @@
                     <p>감독 : 김용화</p>
                     <p>개봉일 : 2023년 8월 2일</p>
                     <p>장르 : 판타지</p>
+                    <p>제작·배급 : CJ ENM</p>
                     <p>
                       줄거리 :<br />
                       대한민국 우주 대원이 달에 홀로 고립되었다 사고로 인해 홀로
@@ -218,7 +336,7 @@
                       <a
                         href="http://www.cgv.co.kr/movies/detail-view/?midx=87046"
                         target="_blank"
-                        >더 알아보기</a
+                        >예매하기</a
                       >
                     </div>
                   </div>
@@ -235,6 +353,7 @@
                     <p>감독 : 김성식</p>
                     <p>개봉일 : 2023년 9월 27일</p>
                     <p>장르 : 판타지</p>
+                    <p>제작·배급 : CJ ENM</p>
                     <p>
                       줄거리 :<br />
                       귀신을 듣지도 보지도 못하지만 귀신 같은 통찰력으로 온갖
@@ -245,7 +364,7 @@
                       <a
                         href="http://www.cgv.co.kr/movies/detail-view/?midx=87335"
                         target="_blank"
-                        >더 알아보기</a
+                        >예매하기</a
                       >
                     </div>
                   </div>
@@ -298,7 +417,13 @@
 
               <div class="con2_text">
                 <div class="con2_txt_1 con2_txt">
-                  <img src="img/top_1.jpg" alt="명량" />
+                  <a
+                    href="https://www.cjenm.com/ko/featured-contents/%EB%AA%85%EB%9F%89/"
+                    target="_blank"
+                    ><img src="img/top_1.jpg" alt="명량" />
+                    <p class="none">포스터 클릭!</p></a
+                  >
+
                   <div class="con2_txtxt">
                     <p class="direc"><span>감독</span><br />김한민</p>
                     <p class="act">
@@ -322,7 +447,12 @@
                   </div>
                 </div>
                 <div class="con2_txt_2 con2_txt">
-                  <img src="img/top_2.jpg" alt="극한직업" />
+                  <a
+                    href="https://www.cjenm.com/ko/featured-contents/%EA%B7%B9%ED%95%9C%EC%A7%81%EC%97%85/"
+                    target="_blank"
+                    ><img src="img/top_2.jpg" alt="극한직업" />
+                    <p class="none">포스터 클릭!</p></a
+                  >
                   <div class="con2_txtxt">
                     <p class="direc"><span>감독</span><br />이병헌</p>
                     <p class="act">
@@ -345,7 +475,12 @@
                   </div>
                 </div>
                 <div class="con2_txt_3 con2_txt">
-                  <img src="img/top_3.jpg" alt="국제시장" />
+                  <a
+                    href="https://www.cjenm.com/ko/featured-contents/%EA%B5%AD%EC%A0%9C%EC%8B%9C%EC%9E%A5/"
+                    target="_blank"
+                    ><img src="img/top_3.jpg" alt="국제시장" />
+                    <p class="none">포스터 클릭!</p></a
+                  >
                   <div class="con2_txtxt">
                     <p class="direc"><span>감독</span><br />윤제균</p>
                     <p class="act">
@@ -362,7 +497,7 @@
                       - '제 65회 베를린국제영화제' 파노라마부문 초청<br />
                       - '제 20회 부산국제영화제' 한국영화의 오늘부문 초청
                     </p>
-                    <h3 class="movie" style="font-size: 120px">국제시장</h3>
+                    <h3 class="movie" style="font-size: 115px">국제시장</h3>
                     <p class="content">
                       1950년대 한국전쟁 이후로부터 현재에 이르기까지 격변의
                       시대를 관통하며 살아온<br />우리 시대 아버지 ‘덕수’(황정민
@@ -375,7 +510,12 @@
                   </div>
                 </div>
                 <div class="con2_txt_4 con2_txt">
-                  <img src="img/top_4.jpg" alt="베테랑" />
+                  <a
+                    href="https://www.cjenm.com/ko/featured-contents/%EB%B2%A0%ED%85%8C%EB%9E%91/"
+                    target="_blank"
+                    ><img src="img/top_4.jpg" alt="베테랑" />
+                    <p class="none">포스터 클릭!</p></a
+                  >
                   <div class="con2_txtxt">
                     <p class="direc"><span>감독</span><br />류승완</p>
                     <p class="act">
@@ -401,11 +541,14 @@
                   </div>
                 </div>
                 <div class="con2_txt_5 con2_txt">
-                  <img src="img/top_5.jpg" alt="광해" />
+                  <a
+                    href="https://www.cjenm.com/ko/featured-contents/%EA%B4%91%ED%95%B4-%EC%99%95%EC%9D%B4-%EB%90%9C-%EB%82%A8%EC%9E%90/"
+                    target="_blank"
+                    ><img src="img/top_5.jpg" alt="광해" />
+                    <p class="none">포스터 클릭!</p></a
+                  >
                   <div class="con2_txtxt">
-                    <p class="direc">
-                      <span>감독</span><br /><span>추창민</span>
-                    </p>
+                    <p class="direc"><span>감독</span><br />추창민</p>
                     <p class="act">
                       <span>출연</span><br />이병헌, 류승룡, 한효주
                     </p>
@@ -460,6 +603,7 @@
             <div class="cgv_wrap">
               <div class="cgv">
                 <img src="img/Asset_5.png" alt="cgv_logo" />
+                <p>CJ그룹 계열의 대한민국을 대표하는 멀티플렉스 영화관 체인</p>
               </div>
               <div class="member">
                 <ul>
